@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090d14" />
+  <title>Pablo Tapia | Líder Técnico I+D</title>
+  <meta name="description" content="Portfolio personal de Pablo Tapia, Líder Técnico de I+D y Software Developer con experiencia en .NET, SQL Server, Azure DevOps, Data Science e Inteligencia Artificial." />
+  <meta property="og:title" content="Pablo Tapia | Líder Técnico I+D" />
+  <meta property="og:description" content="Portfolio personal bilingüe de Pablo Tapia: experiencia, skills, educación, proyectos y contacto." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pablotapia.com.ar" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="floating-orb orb-1" aria-hidden="true"></div>
+  <div class="floating-orb orb-2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#home" class="logo" aria-label="Ir al inicio">Pablo<span>Tapia</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav_about">Sobre mí</a>
+        <a href="#experience" data-i18n="nav_experience">Experiencia</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#education" data-i18n="nav_education">Educación</a>
+        <a href="#projects" data-i18n="nav_projects">Proyectos</a>
+        <a href="#contact" data-i18n="nav_contact">Contacto</a>
+        <button class="lang-btn" id="langBtn" type="button" aria-label="Cambiar idioma">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal stagger-1">
+          <p class="eyebrow" data-i18n="hero_eyebrow">Líder Técnico I+D · Software Developer · .NET · Azure DevOps · Data & AI</p>
+          <h1>
+            <span data-i18n="hero_title_1">Hola, soy</span>
+            <strong>Pablo Tapia</strong>
+          </h1>
+          <p class="hero-description" data-i18n="hero_description">
+            Líder Técnico de I+D y desarrollador de software con experiencia full stack, SQL, soluciones empresariales, automatización de despliegues en Azure y proyectos vinculados a IA y ciencia de datos.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#experience" class="btn primary">
+              <i class="bi bi-briefcase"></i>
+              <span data-i18n="btn_experience">Ver experiencia</span>
+            </a>
+            <a href="#contact" class="btn secondary">
+              <i class="bi bi-send"></i>
+              <span data-i18n="btn_contact">Contactarme</span>
+            </a>
+          </div>
+
+          <div class="social-links" aria-label="Redes sociales">
+            <a href="https://github.com/PabloEduTapia" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/pabloedutapia/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="mailto:pabloedutapia@gmail.com"><i class="bi bi-envelope"></i> Email</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Resumen profesional">
+            <div>
+              <strong>6+</strong>
+              <span data-i18n="stat_years">años de experiencia</span>
+            </div>
+            <div>
+              <strong>I+D</strong>
+              <span data-i18n="stat_leadership">Liderazgo técnico</span>
+            </div>
+            <div>
+              <strong>.NET</strong>
+              <span>Blazor · C# · APIs</span>
+            </div>
+          </div>
+
+          <div class="tech-cloud reveal stagger-2" aria-label="Tecnologías principales">
+            <span class="tech-pill"><i class="bi bi-microsoft"></i> .NET</span>
+            <span class="tech-pill"><i class="bi bi-window-stack"></i> Blazor</span>
+            <span class="tech-pill"><i class="bi bi-database"></i> SQL Server</span>
+            <span class="tech-pill"><i class="bi bi-cloud-arrow-up"></i> Azure</span>
+            <span class="tech-pill"><i class="bi bi-git"></i> Git</span>
+            <span class="tech-pill"><i class="bi bi-cpu"></i> AI</span>
+            <span class="tech-pill"><i class="bi bi-bar-chart"></i> Data</span>
+            <span class="tech-pill"><i class="bi bi-code-slash"></i> APIs</span>
+          </div>
+        </div>
+
+        <aside class="hero-visual reveal stagger-3" aria-label="Fotos de perfil profesionales">
+          <div class="hero-photo-card" id="heroPhotoCard">
+            <img src="assets/hero-main.jpg" alt="Pablo Tapia en un entorno profesional sosteniendo una tablet." class="hero-main-photo" />
+            <img src="assets/hero-close.jpg" alt="Primer plano de Pablo Tapia detrás de una pantalla." class="hero-float-photo" />
+            <div class="status-card glass-card">
+              <span class="status-dot"></span>
+              <div>
+                <strong data-i18n="status_title">Liderazgo técnico, innovación y mejora continua</strong>
+                <p data-i18n="status_text">I+D · Software · DevOps · Data · AI</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <div class="section-title reveal">
+            <p data-i18n="about_label">Sobre mí</p>
+            <h2 data-i18n="about_title">Construyo soluciones tecnológicas con foco en valor, mejora continua e innovación.</h2>
+          </div>
+          <div class="about-box reveal glass-card">
+            <p data-i18n="about_text">
+              Soy Líder Técnico de I+D y desarrollador de software con perfil full stack, experiencia en productos empresariales y fuerte interés por la inteligencia artificial, la ciencia de datos y la automatización. Me gusta resolver problemas reales combinando análisis, programación, bases de datos y buenas prácticas de entrega.
+            </p>
+            <ul class="feature-list">
+              <li data-i18n="about_b1">Liderazgo técnico en iniciativas de I+D y evolución de producto.</li>
+              <li data-i18n="about_b2">Automatización de despliegues y pipelines CI/CD en Azure.</li>
+              <li data-i18n="about_b3">Experiencia en BI, ETL, soporte técnico, documentación y testing.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="photo-stack reveal">
+          <img src="assets/phone-shot.jpg" alt="Pablo Tapia hablando por teléfono en una oficina." class="stack-photo large" />
+          <div class="stack-row">
+            <img src="assets/typing-shot.jpg" alt="Primer plano de manos escribiendo en una notebook, como detalle de trabajo y tecnología." class="stack-photo small" />
+            <img src="assets/office-view.jpg" alt="Vista artística de un edificio de oficinas a través de una superficie desenfocada." class="stack-photo small" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container">
+        <div class="section-title reveal">
+          <p data-i18n="experience_label">Experiencia</p>
+          <h2 data-i18n="experience_title">Trayectoria profesional</h2>
+        </div>
+        <div class="timeline detailed-timeline">
+          <article class="timeline-item reveal glass-card">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="experience-meta">
+              <span><i class="bi bi-building"></i> <span data-i18n="exp_company">SISEM Soluciones de Información S.A.</span></span>
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="exp_1_date">Marzo 2026 — Actualidad</span></span>
+            </div>
+            <h3><i class="bi bi-diagram-3"></i> <span data-i18n="exp_1_title">Líder Técnico de I+D</span></h3>
+            <p data-i18n="exp_1_text">Liderazgo técnico en iniciativas de investigación y desarrollo, evolución de producto, arquitectura de soluciones, acompañamiento al equipo y definición técnica de mejoras vinculadas a .NET, Azure, DevOps, datos e inteligencia artificial.</p>
+          </article>
+
+          <article class="timeline-item reveal glass-card">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="experience-meta">
+              <span><i class="bi bi-building"></i> <span data-i18n="exp_company">SISEM Soluciones de Información S.A.</span></span>
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="exp_2_date">Febrero 2022 — Febrero 2026</span></span>
+            </div>
+            <h3><i class="bi bi-lightbulb"></i> <span data-i18n="exp_2_title">Desarrollador I+D</span></h3>
+            <p data-i18n="exp_2_text">Desarrollo full stack especializado en .NET, IA y DevOps en Azure. Integración de asistentes inteligentes, bots personalizados, aplicaciones móviles, entrenamiento de modelos de IA, pipelines CI/CD y soporte técnico con fuerte base en SQL.</p>
+          </article>
+
+          <article class="timeline-item reveal glass-card">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="experience-meta">
+              <span><i class="bi bi-building"></i> <span data-i18n="exp_company">SISEM Soluciones de Información S.A.</span></span>
+              <span><i class="bi bi-calendar3"></i> <span data-i18n="exp_3_date">Octubre 2019 — Enero 2022</span></span>
+            </div>
+            <h3><i class="bi bi-database-gear"></i> <span data-i18n="exp_3_title">Desarrollador SQL</span></h3>
+            <p data-i18n="exp_3_text">Desarrollo de soluciones de bases de datos y Business Intelligence: funcionalidades a medida, migraciones, corrección de errores, actualizaciones de versión, monitoreo de ambientes, datamarts, ETL, testing, documentación y capacitación de usuarios.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p data-i18n="skills_label">Skills</p>
+          <h2 data-i18n="skills_title">Tecnologías y áreas de trabajo</h2>
+        </div>
+        <div class="cards-grid skills-grid">
+          <article class="card reveal glass-card">
+            <div class="card-icon"><i class="bi bi-code-square"></i></div>
+            <h3>Full Stack</h3>
+            <p>C#, .NET, Blazor, Razor, REST APIs, JavaScript, HTML, CSS, Syncfusion</p>
+          </article>
+          <article class="card reveal glass-card">
+            <div class="card-icon"><i class="bi bi-database-fill-gear"></i></div>
+            <h3>Data & BI</h3>
+            <p>SQL Server, análisis de sistemas, bases de datos, datamarts, ETL, Business Intelligence</p>
+          </article>
+          <article class="card reveal glass-card">
+            <div class="card-icon"><i class="bi bi-cloud-check"></i></div>
+            <h3>DevOps & Cloud</h3>
+            <p>Azure DevOps, pipelines CI/CD, Git, Azure, despliegues, administración de ambientes</p>
+          </article>
+          <article class="card reveal glass-card">
+            <div class="card-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h3>AI & Data Science</h3>
+            <p>Python, Pandas, Machine Learning, OpenAI API, Hugging Face, análisis exploratorio</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <div class="container">
+        <div class="section-title reveal">
+          <p data-i18n="education_label">Educación</p>
+          <h2 data-i18n="education_title">Formación académica y técnica</h2>
+        </div>
+        <div class="education-grid expanded-education">
+          <article class="education-card reveal glass-card">
+            <span class="education-badge"><i class="bi bi-bar-chart-line"></i> IFTS 18</span>
+            <h3 data-i18n="education_name_1">Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial</h3>
+            <p class="muted" data-i18n="education_school_1">Instituto de Formación Técnica Superior N° 18 · Abril 2024 – Julio 2026</p>
+            <p data-i18n="education_text_1">Análisis de datos, estadística, visualización, machine learning y aplicación práctica de soluciones con inteligencia artificial.</p>
+          </article>
+          <article class="education-card reveal glass-card">
+            <span class="education-badge"><i class="bi bi-laptop"></i> UTN</span>
+            <h3 data-i18n="education_name_2">Técnico Superior en Sistemas Informáticos</h3>
+            <p class="muted" data-i18n="education_school_2">Universidad Tecnológica Nacional · Marzo 2013 – Diciembre 2017</p>
+            <p data-i18n="education_text_2">Formación orientada al desarrollo de software, programación, análisis de sistemas y bases de datos.</p>
+          </article>
+          <article class="education-card reveal glass-card small-education">
+            <span class="education-badge"><i class="bi bi-palette"></i> Coderhouse</span>
+            <h3 data-i18n="education_name_3">Diseñador Web</h3>
+            <p class="muted" data-i18n="education_school_3">Coderhouse · 2018 – 2019</p>
+          </article>
+          <article class="education-card reveal glass-card small-education">
+            <span class="education-badge"><i class="bi bi-cup-hot"></i> CFP N°23</span>
+            <h3 data-i18n="education_name_4">Java Backend</h3>
+            <p class="muted" data-i18n="education_school_4">CFP N°23 · 2019</p>
+          </article>
+          <article class="education-card reveal glass-card small-education full-row">
+            <span class="education-badge"><i class="bi bi-controller"></i> Unreal Engine</span>
+            <h3 data-i18n="education_name_5">Desarrollo de Videojuegos con Unreal Engine</h3>
+            <p class="muted" data-i18n="education_school_5">Ministerio de Educación · 2020</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p data-i18n="projects_label">Proyectos</p>
+          <h2 data-i18n="projects_title">Proyectos destacados</h2>
+        </div>
+        <div class="cards-grid projects-grid">
+          <article class="project-card reveal glass-card">
+            <span class="project-tag"><i class="bi bi-building"></i> Enterprise</span>
+            <h3>Jx4 / Web Apps</h3>
+            <p data-i18n="project_1">Aplicaciones empresariales desarrolladas con .NET, Blazor, SQL Server, integraciones y componentes reutilizables.</p>
+          </article>
+          <article class="project-card reveal glass-card">
+            <span class="project-tag"><i class="bi bi-graph-up-arrow"></i> Data</span>
+            <h3>Supermarket Sales EDA</h3>
+            <p data-i18n="project_2">Análisis exploratorio de ventas, rentabilidad y segmentación comercial con foco en insights de negocio.</p>
+          </article>
+          <article class="project-card reveal glass-card">
+            <span class="project-tag"><i class="bi bi-stars"></i> AI</span>
+            <h3>AI Text Evaluation App</h3>
+            <p data-i18n="project_3">Aplicación para evaluación de textos usando APIs de IA, modelos de machine learning y una interfaz web simple.</p>
+          </article>
+          <article class="project-card reveal glass-card">
+            <span class="project-tag"><i class="bi bi-phone"></i> Mobile / Web</span>
+            <h3>Food Planner</h3>
+            <p data-i18n="project_4">Aplicación mobile/web para planificación automática de comidas en el hogar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-box reveal glass-card">
+          <p class="eyebrow" data-i18n="contact_label">Contacto</p>
+          <h2 data-i18n="contact_title">¿Querés contactarme?</h2>
+          <p data-i18n="contact_text">Podés escribirme por email o ver mis proyectos y experiencia en GitHub y LinkedIn.</p>
+          <div class="hero-actions center">
+            <a href="mailto:pabloedutapia@gmail.com" class="btn primary"><i class="bi bi-envelope-paper"></i> Email</a>
+            <a href="https://github.com/PabloEduTapia" target="_blank" rel="noopener noreferrer" class="btn secondary"><i class="bi bi-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/pabloedutapia/" target="_blank" rel="noopener noreferrer" class="btn secondary"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Pablo Tapia. <span data-i18n="footer_text">Todos los derechos reservados.</span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
